@@ -20,8 +20,7 @@ import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
 export default function Page() {
 
-  const [ isVisible, setIsVisible ] = useState(true);
-  const [ isEnabled, setIsEnabled ] = useState(false);
+  const [ isVisible, setIsVisible ] = useState(false);
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
     from: new Date(new Date().getFullYear(), 0, 12),
     to: addDays(new Date(new Date().getFullYear(), 0, 12), 30),
@@ -69,16 +68,12 @@ export default function Page() {
 
         <ScrollReveal>
           {/* notification/update alert */}
-          <Alert style={{display: isEnabled ? 'light' : 'dark'}}>
+          <Alert>
             <InfoIcon />
             <AlertTitle>Lights out!</AlertTitle>
             <AlertDescription>
-              Dark mode is now available.
+              Press <kbd>d</kbd> to toggle dark mode.
             </AlertDescription>
-            <AlertAction>
-              <Button variant="outline" onClick={()=>setIsEnabled(true)}>Enable</Button>
-              <Button variant="default" onClick={()=>setIsEnabled(false)}>Disable</Button>
-            </AlertAction>
           </Alert>
         </ScrollReveal>
           
@@ -95,9 +90,6 @@ export default function Page() {
             </AlertAction>
           </Alert>
         </ScrollReveal>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
       </div>
     </div>
   )

@@ -55,7 +55,7 @@ const chartConfig = {
   },
   misc: {
     label: "Misc",
-    color: "var(--chart-0)",
+    color: "var(--chart-6)",
   },
 } satisfies ChartConfig
 
