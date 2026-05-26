@@ -1,6 +1,11 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import {
   Alert,
   AlertAction,
   AlertDescription,
@@ -10,16 +15,19 @@ import { Calendar } from "@/components/ui/calendar"
 import * as React from "react"
 import { addDays } from "date-fns"
 import { type DateRange } from "react-day-picker"
-
 import ChartPieSimple from "../components/ChartPieSimple/ChartPieSimple";
 import { CardDescription } from "@/components/ui/card"
 import { InfoIcon } from "lucide-react"
 import { useState } from "react"
 import ChartAreaLegend from "@/components/ChartAreaLegend/ChartAreaLegend";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
+import DataTable from "@/components/DataTable/DataTable";
+// Some DataTable exports may have typings that TS interprets as () => void.
+// Cast to a React component type for use in JSX.
+const DataTableComponent = DataTable as unknown as React.ComponentType<any>;
 
 export default function Page() {
-
+  const fishavatar = "./public/fishavatar.jpg"
   const [ isVisible, setIsVisible ] = useState(false);
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
     from: new Date(new Date().getFullYear(), 0, 12),
@@ -27,12 +35,22 @@ export default function Page() {
   })
 
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    <div className="flex flex-col min-h-svh p-6">
+      <div className="flex m-4 justify-end">
+        <Avatar>
+          <AvatarImage
+            src={fishavatar}
+            alt="fish avatar"
+            className="grayscale"
+          />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+      </div>
+      <div className="flex flex-col min-w-md gap-6 text-sm leading-loose">
         <ScrollReveal>
           <div>
-            <h1 className="font-large">Budget Sense</h1>
-            <h2>Budget your life so that you can live it!</h2>
+            <h1 className="text-2xl">Budget Sense</h1>
+            <h2 className="">Budget your life so that you can live it!</h2>
             <p>Import your details to get started.</p>
             <Button className="mt-2">Import</Button>
           </div>
@@ -53,6 +71,7 @@ export default function Page() {
             />
           </div>
         </ScrollReveal>
+
         <ScrollReveal>
           <div className="chart pie">
             <ChartPieSimple>
@@ -60,6 +79,11 @@ export default function Page() {
             </ChartPieSimple>
           </div>
         </ScrollReveal>
+
+        <ScrollReveal>
+          <DataTableComponent />
+        </ScrollReveal>
+
         <ScrollReveal>
           <div className="chart area-legend">
               <ChartAreaLegend></ChartAreaLegend>

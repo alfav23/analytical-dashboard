@@ -6,7 +6,6 @@ import { Pie, PieChart } from "recharts"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -26,7 +25,7 @@ const chartData = [
   { expense: "electrical", cost: 187, fill: "var(--chart-3)" },
   { expense: "gas", cost: 173, fill: "var(--chart-4)" },
   { expense: "rent", cost: 900, fill: "var(--chart-5)" },
-  { expense: "misc", cost: 90, fill: "var(--chart-0)" },
+  { expense: "misc", cost: 90, fill: "var(--chart-6)" },
 ]
 
 const chartConfig = {
