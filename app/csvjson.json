@@ -1,0 +1,163 @@
+[
+  {
+    "Date": "5/1/2026",
+    "Expense": "Rent",
+    "Amount": "$1,950.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/19/2026",
+    "Expense": "JCP&L",
+    "Amount": "$33.96",
+    "Frequency": "Monthly",
+    "Account": "TD"
+  },
+  {
+    "Date": "5/14/2026",
+    "Expense": "NJNG",
+    "Amount": "$10.00",
+    "Frequency": "Monthly",
+    "Account": "TD"
+  },
+  {
+    "Date": "5/25/2026",
+    "Expense": "Groceries",
+    "Amount": "$250.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/1/2026",
+    "Expense": "Premera",
+    "Amount": "$120.92",
+    "Frequency": "Monthly",
+    "Account": "Paycheck"
+  },
+  {
+    "Date": "5/1/2026",
+    "Expense": "Fidelity",
+    "Amount": "$80.00",
+    "Frequency": "Monthly",
+    "Account": "Paycheck"
+  },
+  {
+    "Date": "5/18/2026",
+    "Expense": "Horizon",
+    "Amount": "$82.94",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/30/2026",
+    "Expense": "Acorns",
+    "Amount": "$28.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/1/2026",
+    "Expense": "Fuel",
+    "Amount": "$100.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/29/2026",
+    "Expense": "USAA",
+    "Amount": "$112.81",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/11/2026",
+    "Expense": "Upstart",
+    "Amount": "$136.92",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/11/2026",
+    "Expense": "Transfer",
+    "Amount": "$90.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/23/2026",
+    "Expense": "MetroPCS",
+    "Amount": "$85.00",
+    "Frequency": "Monthly",
+    "Account": "TD"
+  },
+  {
+    "Date": "5/6/2026",
+    "Expense": "True Sea Moss",
+    "Amount": "$35.00",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/17/2026",
+    "Expense": "Planet Fitness",
+    "Amount": "$15.99",
+    "Frequency": "Monthly",
+    "Account": "WF *1123"
+  },
+  {
+    "Date": "5/5/2026",
+    "Expense": "Shonen Jump",
+    "Amount": "$4.25",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/24/2026",
+    "Expense": "Apple",
+    "Amount": "$0.99",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/4/2026",
+    "Expense": "Netflix",
+    "Amount": "$21.31",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/20/2026",
+    "Expense": "EZ Pass",
+    "Amount": "$35.00",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/20/2026",
+    "Expense": "PortfolioBox",
+    "Amount": "$7.00",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/30/2026",
+    "Expense": "Crunchyroll",
+    "Amount": "$7.99",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "5/28/2026",
+    "Expense": "Spotify",
+    "Amount": "$12.99",
+    "Frequency": "Monthly",
+    "Account": "WF *5629"
+  },
+  {
+    "Date": "",
+    "Expense": "Total",
+    "Amount": "$3,221.07",
+    "Frequency": "",
+    "Account": ""
+  }
+]
