@@ -23,9 +23,9 @@ import { InfoIcon, PlusIcon } from "lucide-react"
 import { useState } from "react"
 import ChartAreaLegend from "@/components/ChartAreaLegend/ChartAreaLegend";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
+import EnterAnimation from "@/components/EnterAnimation";
 import ChartLineLinear from "@/components/ChartLineLinear";
 import DataTable from "@/components/DataTable/DataTable";
-const DataTableComponent = DataTable as unknown as React.ComponentType<any>;
 import { Field } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 
@@ -57,11 +57,13 @@ export default function Page() {
 }
 
   return (
-    <div className="flex flex-col min-h-svh p-6">
-       <Field orientation="horizontal">
-          <Input type="search" placeholder="Search..." />
-          <Button>Search</Button>
-        </Field>
+    <div className="flex flex-col flex-wrap min-h-svh p-6">
+      <EnterAnimation>
+        <Field orientation="horizontal">
+            <Input type="search" placeholder="Search..." />
+            <Button>Search</Button>
+          </Field>
+        </EnterAnimation>
       <div className="flex m-4 justify-end">
         <Avatar>
           <AvatarImage
@@ -72,7 +74,6 @@ export default function Page() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
-      
       <div className="flex flex-col min-w-md gap-6 text-sm leading-loose">
         <ScrollReveal>
           <div>
@@ -95,6 +96,7 @@ export default function Page() {
             <Button className="mt-2" onClick={(e) => handleFile(e, file)}>Import</Button>
           </div>
         </ScrollReveal>
+
         <ScrollReveal>
           <div className="calendar" id="calendar">
             <Calendar
@@ -121,7 +123,7 @@ export default function Page() {
         </ScrollReveal>
 
         <ScrollReveal>
-          <DataTableComponent />
+          <DataTable />
         </ScrollReveal>
 
         <ScrollReveal>
